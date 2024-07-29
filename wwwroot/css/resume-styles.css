@@ -1,0 +1,89 @@
+@charset "UTF-8";
+:root{
+    --bs-rprimary-color:#002147;
+    --bs-rtext-primary-color:#fff;
+    --bs-rbg-card-color:#fff;
+    --bs-rtext-secondary-color:#75aceb;
+    --bs-rsecondary-color:#e9ecef; 
+    --bs-font-cursive: cursive;
+    --bs-display-inline: inline-block;
+}
+body.resume{
+  background-color: var(--bs-rbg-card-color);
+  font-family: var(--bs-font-cursive);
+}
+
+.card {
+  margin-top: 4rem;
+  background-color: var(--bs-rbg-card-color)!important;
+  color: var(--bs-rprimary-color)!important;
+  /* box-shadow: 0 4px 8px rgba(225, 225, 225, 0.4); */
+}
+
+.resume-header{
+  background-color: var(--bs-rprimary-color)!important;
+  color: var(--bs-rtext-primary-color);
+  box-shadow: 0 4px 8px rgba(0, 33, 71, 0.4);
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.right-side{
+    margin-left: 1rem;
+  }
+
+  .left-side{
+    margin-left: 1rem;
+  }
+  
+  .summary, .experience{
+    margin-left: 1.5rem;
+    margin-right: -2.0rem;
+  }
+  
+  .summary > p{
+    line-height: 1.7rem;
+  }
+
+  .skills-list{
+     /* background-color: var(--bs-primary-color); */
+     border-bottom: 1px solid var(--bs-primary-color);
+  }
+  
+  .list-group-item{
+    color: var(--bs-text-secondary-color) !important;
+    border-bottom: 1px solid var(--bs-primary-color);
+  }
+
+.contact > a{
+  text-decoration: none;
+  margin-bottom: 2rem;
+  /* color: #fff; */
+}
+
+.rcustom-svg {
+    width: 2em;
+    height: 2em;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.rlinkedin{
+   font-size: large;
+}
+  
+.headings{
+    color: var(--bs-rtext-secondary-color);
+ }
+
+.work-list{
+    list-style-type: square;
+}
+
+.work-list > li{
+   margin-top: 0.9rem;
+   line-height: 1.7rem;
+}
+
+
+
