@@ -235,7 +235,8 @@ body {
 /* About section */
 .about-p {
   color: var(--bs-text-primary-color);
-  font-family: var(--bs-font-cursive);
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
   text-align: justify;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -352,7 +353,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: var(--bs-font-cursive);
+  font-family: "Poppins" sans-serif;
 }
 
 .resume-position small {
@@ -505,7 +506,7 @@ body {
   .ml-3 {
     margin-left: 0;
   }
-  #experience {
+  #about {
     margin-left: 4em;
   }
   .projects-div {
@@ -517,7 +518,7 @@ body {
   .ml-3, .ml-2 {
     margin-left: 0;
   }
-  #experience {
+  #about {
     margin-left: 2em;
   }
   .projects-div {
@@ -533,11 +534,8 @@ body {
 }
 
 @media (max-width: 576px) {
-  #experience {
+  #about {
     margin-left: 1em;
-  }
-  .projects-div {
-    grid-template-columns: 1fr;
   }
   .body-content {
     margin: 2rem 1rem;
