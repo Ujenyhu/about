@@ -506,9 +506,9 @@ body {
   .ml-3 {
     margin-left: 0;
   }
-  #about {
+  /* #about {
     margin-left: 4em;
-  }
+  } */
   .projects-div {
     grid-template-columns: 1fr 1fr;
   }
@@ -518,9 +518,9 @@ body {
   .ml-3, .ml-2 {
     margin-left: 0;
   }
-  #about {
+  /* #about {
     margin-left: 2em;
-  }
+  } */
   .projects-div {
     grid-template-columns: 1fr;
   }
@@ -534,9 +534,9 @@ body {
 }
 
 @media (max-width: 576px) {
-  #about {
+  /* #about {
     margin-left: 1em;
-  }
+  } */
   .body-content {
     margin: 2rem 1rem;
   }
