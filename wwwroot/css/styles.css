@@ -528,7 +528,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .main-skill, .side-skill {
+  .main-skill {
     margin: 15px;
   }
 
