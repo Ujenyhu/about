@@ -529,6 +529,10 @@ body {
     flex-wrap: wrap;
   }
   .main-skill, .side-skill {
+    margin: 15px;
+  }
+
+  .side-skill {
     margin: 10px;
   }
 }
