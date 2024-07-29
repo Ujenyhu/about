@@ -42,7 +42,7 @@ body {
 
 .sub {
   color: var(--bs-text-secondary-color);
-  font-family: cursive;
+  font-family: var(--bs-font-cursive);
   font-weight: 300;
 }
 
@@ -353,7 +353,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Poppins" sans-serif;
+  font-family: var(--bs-font-cursive);
 }
 
 .resume-position small {
