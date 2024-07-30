@@ -60,6 +60,8 @@ body {
 }
 
 .logo {
+  display: flex;
+  flex-wrap: inherit;
   font-size: 24px;
   font-style: italic;
   border-top: 2px solid #fff;
