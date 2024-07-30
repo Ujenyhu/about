@@ -42,7 +42,7 @@ body {
 
 .sub {
   color: var(--bs-text-secondary-color);
-  font-family: var(--bs-font-cursive);
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 #welcome-msg {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
   overflow: hidden;
@@ -321,7 +321,7 @@ body {
   background-color: rgba(45, 212, 191, .1);
   color: rgb(231, 219, 108);
   font-size: small;
-  font-family: var(--bs-font-cursive);
+  font-family: "Poppins", sans-serif;
   line-height: 1.2rem;
 }
 
@@ -494,7 +494,7 @@ body {
   padding: 20px 0;
   text-align: center;
   font-size: small;
-  font-family: var(--bs-font-cursive);
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer p {
@@ -528,11 +528,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .main-skill {
-    margin: 15px;
-  }
-
-  .side-skill {
+  .main-skill, .side-skill {
     margin: 10px;
   }
 }
