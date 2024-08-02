@@ -20,27 +20,28 @@
   <link href="wwwroot/css/styles.css" rel="stylesheet" type="text/css" />
 
   <!-- Bootstrap Css -->
-  <link href="wwwroot/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="wwwroot/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+  <link href="wwwroot/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  
+  <!-- <link href="wwwroot/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" /> -->
   <link href="wwwroot/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link href="wwwroot/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <!-- <link href="wwwroot/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="wwwroot/assets/fontawesome/css/brands.css" rel="stylesheet" />
   <link href="wwwroot/assets/fontawesome/css/solid.css" rel="stylesheet" />
-  <link href="wwwroot/assets/fontawesome/css/v4-shims.css" rel="stylesheet" />
+  <link href="wwwroot/assets/fontawesome/css/v4-shims.css" rel="stylesheet" /> -->
 
 
 </head>
 
 <body>
   <!-- Header -start -->
-  <nav class="navbar navbar-expand-md navbar-expand-sm">
-    <div class="container">
+  <nav class="navbar navbar-expand-sm">
+    <div class="container d-flex">
       <a class="navbar-brand" href="index.html">
         <!-- <img alt="Logo" src="wwwroot/images/logo-white.png"> -->
         <h3 class="logo mt-2">𝖀E</h3>
@@ -49,14 +50,14 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-brand" id="navbarNav">
+      <div class="collapse navbar-collapse text-brand flex-column-reverse" id="navbarNav">
         <!-- <div id="welcome-msg"></div> -->
        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html#intro" hidden>Intro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html#about">About Me</a>
+            <a class="nav-link" aria-current="page" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#works">Works</a>
@@ -83,7 +84,7 @@
           <h1 class="intro-name-small">Making ideas into reality, one clean code at a time.</h1>
 
           <div class="col-lg-12 col-sm-12">
-            <small class="text-brand-sec">I am <b class="text-bold">Egwuda Ujenyuojo</b> - Software Developer, an avid
+            <small class="text-brand-sec">I am <b class="text-bold name">Egwuda Ujenyuojo</b> - Software Developer, an avid
               learner and a technical writer sometimes.
             </small>
             <!-- #00AFF0sykpe
@@ -110,18 +111,18 @@
           <div class="container skills-img-container">
 
             <div class="main-skill">
-              <img src="wwwroot/images/csharp-logo.png" alt="c#">
+              <img src="wwwroot/images/csharp-sec-logo.png" alt="c# - The major language i use">
             </div>
 
             <div class="side-skill-container">
               <div class="side-skill">
-                <img src="wwwroot/images/js.png" alt="javascript">
+                <img src="wwwroot/images/js.png" alt="javascript - I use js basically for interactiveness on web applications">
               </div>
               <div class="side-skill">
-                <img src="wwwroot/images/node-logo.png" alt="node.js">
+                <img src="wwwroot/images/node-logo.png" alt="node.js- with typescript,mainly for blockchain applications">
               </div>
               <div class="side-skill">
-                <img src="wwwroot/images/sql-logo.png" alt="sql">
+                <img src="wwwroot/images/sql-logo.png" alt="api">
               </div>
             </div>
           </div>
@@ -136,13 +137,13 @@
       <div class="row">
         <div class="col-lg-12 col-sm-12">
           <p class="about-p mt-2">
-            Hi there! I'm a Egwuda Ujenyuojo, a software developer with a passion for building great software. I specialize in C# and Node.js, with experience in SQL and Linux, which helps with server deployment and data management. 
-            Lately, I’m deep into backend development, creating logic in APIs. With a solid background in building web applications across various languages and frameworks, I thrive on solving problems and delivering high-quality code and robust applications.
+            Hi there! I'm a software developer with a passion for building great software. I specialize in C# and Node.js, with experience in SQL and Linux commands, which helps with server deployment and data management. 
+            With a solid background in building web applications and creating logic in APIs across various languages and frameworks, I thrive on solving problems and delivering high-quality code and robust applications.
 
             <br></br>When I'm not coding or battling bugs, I'm either writing, reading, or catching up on sleep—my hobbies in a nutshell. 
             Let's build something amazing together!
           </p>
-
+          <!-- Lately, I’m deep into backend development, creating logic in APIs. -->
           <small class="sub">Skills/Technologies</small>
           <div class="col-lg-12 col-sm-12">
             <ul class="skills-list list-unstyled mt-3" id="skills">
@@ -152,15 +153,13 @@
               <li class="mb-3">
                 <div class="skills-badge">Node.js</div>
               </li>
-              <li class="mb-3">
-                <div class="skills-badge">Vanilla JavaScript, jQuery</div>
-              </li>
               
               <li class="mb-3">
                 <div class="skills-badge">.NET, ASP.NET Core</div>
               </li>
+
               <li class="mb-3">
-                <div class="skills-badge">REST API</div>
+                <div class="skills-badge">JavaScript, jQuery</div>
               </li>
               <!-- <li class="mb-3">
                 <div class="skills-badge">SQL/T-SQL</div>
@@ -169,11 +168,14 @@
                 <div class="skills-badge">MSSQL, MongoDB</div>
               </li>
               <li class="mb-3">
-                <div class="skills-badge">Windows, Linux (Ubuntu)</div>
-              </li>
-              <li class="mb-3">
                 <div class="skills-badge">HTML & CSS</div>
               </li> 
+              <li class="mb-3">
+                <div class="skills-badge">REST API</div>
+              </li>
+              <li class="mb-3">
+                <div class="skills-badge">Windows, Linux (Ubuntu)</div>
+              </li>
             </ul>
           </div>
 
@@ -326,7 +328,7 @@
   </footer>
 
   <iframe id="pdfFrame" src="resumetwoz.html" style="display: none;"></iframe>
-  <script src="wwwroot/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="wwwroot/lib/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
     integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -338,7 +340,7 @@
     // html2pdf().from(htmlElement).save('exported_file.pdf');
     // } 
 
-    document.addEventListener("DOMContentLoaded", function () {
+    /*document.addEventListener("DOMContentLoaded", function () {
       debugger;
       const referrer = document.referrer;
       const welcomeMessageElement = document.getElementById('welcome-msg');
@@ -375,7 +377,7 @@
       setTimeout(() => {
           welcomeMessageElement.style.borderRight = 'none';
       }, 3500);
-    });
+    });*/
 
 
     function printResume() {

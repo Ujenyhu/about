@@ -15,7 +15,7 @@
 body {
   color: var(--bs-text-primary-color);
   background-color: var(--bs-primary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .ml-2 {
@@ -38,6 +38,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
+}
+
+.name{
+  font-weight: 600;
 }
 
 .sub {
@@ -125,6 +129,7 @@ body {
   width: 120px;
   height: 120px;
   margin-bottom: 20px;
+  background-color: #fff;
 }
 
 .main-skill img {
@@ -342,21 +347,13 @@ body {
 }
 
 /* Resume section */
-.resume-title {
-  color: var(--bs-text-secondary-color);
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: var(--bs-font-cursive);
-}
 
 .resume-position h4 {
   line-height: 18px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: var(--bs-font-cursive);
+  font-family: "Poppins", sans-serif;
 }
 
 .resume-position small {
@@ -509,12 +506,12 @@ body {
   .ml-3 {
     margin-left: 0;
   }
-  /* #about {
-    margin-left: 4em;
-  } */
+
   .projects-div {
     grid-template-columns: 1fr 1fr;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -527,19 +524,25 @@ body {
   .projects-div {
     grid-template-columns: 1fr;
   }
-  .skills-img-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .main-skill, .side-skill {
-    margin: 10px;
-  }
+
+  
 }
 
 @media (max-width: 576px) {
-  /* #about {
-    margin-left: 1em;
+  
+  /* .skills-img-container {
+    align-items: center;
   } */
+
+  
+  /* .main-skill, .side-skill {
+    margin: 8px;
+  } */
+
+  .custom-svg {
+    width: 2.5em; 
+  }
+
   .body-content {
     margin: 2rem 1rem;
   }
