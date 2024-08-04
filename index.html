@@ -8,9 +8,9 @@
     ℰℊ𝓌𝓊𝒹𝒶 𝒰𝒿ℯ𝓃𝓎𝓊
   </title>
   <meta name="description" content="Egwuda Ujenyuojo is a dedicated software engineer speciliazed in 
-    building accessible and scalable applications and services">
-  <meta content="Egwuda Ujenyuojo" name="author">
-  <meta name="image" content="wwwroot/images/favicon-32x32.png" sizes="32x32">
+    using c#, node.js amidst other languages and frameworks to build accessible and scalable software">
+  <meta content="Egwuda Ujenyuojo's Personal website" name="author">
+  <meta name="icon" content="wwwroot/images/favicon-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="wwwroot/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="wwwroot/images/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="16x16" href="wwwroot/images/favicon-32x32.png">
@@ -41,7 +41,7 @@
 <body>
   <!-- Header -start -->
   <nav class="navbar navbar-expand-sm">
-    <div class="container d-flex">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
         <!-- <img alt="Logo" src="wwwroot/images/logo-white.png"> -->
         <h3 class="logo mt-2">𝖀E</h3>
@@ -57,7 +57,7 @@
             <a class="nav-link active" aria-current="page" href="index.html#intro" hidden>Intro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html#about">About</a>
+            <a class="nav-link"  href="index.html#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html#works">Works</a>
@@ -137,7 +137,8 @@
       <div class="row">
         <div class="col-lg-12 col-sm-12">
           <p class="about-p mt-2">
-            Hi there! I'm a software developer with a passion for building great software. I specialize in C# and Node.js, with experience in SQL and Linux commands, which helps with server deployment and data management. 
+            Hi there! I'm a software developer with a passion for building great software. I specialize in C#, .NET, JavaScript, Node.js, MVC, Web API, SQL while adhering to efficient
+            engineering practices and Object-oriented principles. 
             With a solid background in building web applications and creating logic in APIs across various languages and frameworks, I thrive on solving problems and delivering high-quality code and robust applications.
 
             <br></br>When I'm not coding or battling bugs, I'm either writing, reading, or catching up on sleep—my hobbies in a nutshell. 
@@ -171,7 +172,7 @@
                 <div class="skills-badge">HTML & CSS</div>
               </li> 
               <li class="mb-3">
-                <div class="skills-badge">REST API</div>
+                <div class="skills-badge">MVC, Web API</div>
               </li>
               <li class="mb-3">
                 <div class="skills-badge">Windows, Linux (Ubuntu)</div>
@@ -193,7 +194,7 @@
 
             <ul class="list-unstyled resume-file">
               <li>
-                <a href="javascript:printResume()" class="resumeLink" title="View Resume">
+                <a href="javascript:printResume()" class="resumeLink" title="Print Resume">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 750" fill="rgb(231, 219, 108)"
                     class="custom-svg">
                     <path
@@ -206,7 +207,7 @@
 
 
               <li>
-                <a href="javascript:downloadPDF()" class="resumeLink" title="View Resume">
+                <a href="javascript:downloadPDF()" class="resumeLink" title="Download resume in pdf format">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25" fill="rgb(231, 219, 108)"
                     class="custom-svg">
                     <path
@@ -327,61 +328,17 @@
 
   </footer>
 
-  <iframe id="pdfFrame" src="resumetwoz.html" style="display: none;"></iframe>
+  <iframe id="pdfFrame" src="resume.html" style="display: none;"></iframe>
   <script src="wwwroot/lib/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
-    integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <script>
-
-    // function downloadPDF(){
-    // let htmlElement = document.getElementById('res');
-
-    // html2pdf().from(htmlElement).save('exported_file.pdf');
-    // } 
-
-    /*document.addEventListener("DOMContentLoaded", function () {
-      debugger;
-      const referrer = document.referrer;
-      const welcomeMessageElement = document.getElementById('welcome-msg');
-      let client = '!';
-      let message = `Welcome! Nice to have you here.`;
-
-      if (referrer) {
-        if (referrer.includes("twitter.com")) {
-          const match = referrer.match(/twitter\.com\/([^/?]+)/);
-            if (match && match[1]) {
-              message = `Welcome from @${match[1]} on Twitter! Nice to have you here.`;
-            }
-        } else if (referrer.includes("facebook.com")) {
-          const match = referrer.match(/facebook\.com\/([^/?]+)/);
-            if (match && match[1]) {
-              message = `Welcome from ${match[1]}'s Facebook page! Nice to have you here.`;
-            }
-        } else if (referrer.includes("linkedin.com")) {
-          const match = referrer.match(/linkedin\.com\/in\/([^/?]+)/);
-            if (match && match[1]) {
-                message =  `Welcome from ${match[1]}'s LinkedIn profile!`;
-            }
-        } else if (referrer.includes("whatsapp.com")) {
-            message =  "Welcome from WhatsApp!  Nice to have you here.";
-        } else if (referrer.includes("google.com")) {
-            message  = "Welcome from Google!  Nice to have you here.";
-        }
-      }
-
-      welcomeMessageElement.textContent = message;
-
-
-      // Stop the cursor blinking after typing is done
-      setTimeout(() => {
-          welcomeMessageElement.style.borderRight = 'none';
-      }, 3500);
-    });*/
 
 
     function printResume() {
-      var printWindow = window.open('resumetwoz.html', '_blank');
+      var printWindow = window.open('resume.html', '_blank');
       printWindow.onload = function () {
         printWindow.print();
       };
@@ -395,75 +352,26 @@
         var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
         var htmlElement = iframeDocument.body;
 
+        // Inject styles directly into the iframe document
+        // var styleElement = iframeDocument.createElement('style');
+        // styleElement.innerHTML = `
+        //   body {
+        //     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+        //     margin:  2.5rem 2.5rem !important;
+        //     background-color: white !important;
+        //     color: black !important;
+        //   } 
+        // `;
+        // iframeDocument.head.appendChild(styleElement);
+
         // Convert iframe content to PDF
-        html2pdf().from(htmlElement).save('Egwuda_Ujenyuojo_Resume.pdf');
+        html2pdf().from(htmlElement).save(`Egwuda Ujenyuojo's Resume.pdf`);
       };
 
       // If the iframe is already loaded, call the onload function directly
       if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
         iframe.onload();
       }
-    }
-
-    // fetch('resumetwoz.html')
-    //                 .then(response => response.text())
-    //                 .then(data => {
-    //                     var htmlElement = new DOMParser().parseFromString(data, 'text/html').body;
-    //                     // Embed the fetched content into a hidden div
-    //                     var content = document.getElementById('resume');
-    //                     content.innerHTML = '';
-    //                     content.appendChild(htmlElement);
-
-    //                     // Clone and append the link elements referencing CSS files
-    //                     var linkElements = htmlElement.querySelectorAll('link[rel="stylesheet"]');
-    //                     linkElements.forEach(linkElement => {
-    //                         var clonedLinkElement = linkElement.cloneNode(true);
-    //                         content.appendChild(clonedLinkElement);
-    //                     });
-    //                     // Convert fetched content to PDF
-    //                     html2pdf().from(htmlElement).save('exported_file.pdf');
-    //                 })
-    //                 .catch(error => {
-    //                     console.error('Error fetching file:', error);
-    //                 });
-    function pdfResume() {
-      fetch('resumetwoz.html')
-        .then(response => response.text())
-        .then(html => {
-          debugger;
-          fetchCSSAndConvert(html);
-        });
-    }
-
-    function fetchCSSAndConvert(htmlContent) {
-      // Fetch all linked CSS files
-      const stylesheets = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(link => link.href);
-
-      // Fetch each CSS file and then convert HTML to PDF
-      Promise.all(stylesheets.map(url => fetch(url).then(response => response.text())))
-        .then(cssContents => {
-          const css = cssContents.join('\n');
-          const sanitizedHtml = DOMPurify.sanitize(htmlContent); // Sanitize HTML content
-
-          // Convert HTML with CSS to PDF
-          const pdf = new jspdf.jsPDF();
-          pdf.context2d.autoPaging = true;
-          pdf.html(sanitizedHtml, {
-            callback: function (pdf) {
-              // Open the generated PDF in a new tab
-              window.open(pdf.output('bloburl'), '_blank');
-            },
-            x: 10,
-            y: 10,
-            html2canvas: {
-              scale: 0.75
-            },
-            // jsPDF: {
-            //     format: 'a4'
-            // },
-            // css: css
-          });
-        });
     }
   </script>
 </body>

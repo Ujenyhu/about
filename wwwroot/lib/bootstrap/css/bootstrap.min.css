@@ -4561,7 +4561,7 @@ fieldset:disabled .btn {
     display: flex;
     gap: 15%;
     flex-direction: column;
-    padding-left: 20rem;
+    padding-left: 18rem;
     margin-bottom: 0;
     list-style: none
 }
