@@ -333,19 +333,6 @@ body {
   line-height: 1.2rem;
 }
 
-/* Projects section */
-.projects-div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em; /* Adjusted for better spacing */
-}
-
-.projects-card {
-  background-color: var(--bs-card-bg-color) !important;
-  border: 1px solid var(--bs-card-border-rgb) !important;
-  color: var(--bs-secondary-color) !important;
-}
-
 /* Resume section */
 
 .resume-position h4 {
@@ -402,70 +389,83 @@ body {
   line-height: 1.2rem;
 }
 
-/* *-------------Works Section */
+/* Projects section */
+/* #projects {
+  text-align: justify;
+  padding: 20px;
+} */
 
-.work-container {
+.projects-grid {
   display: flex;
+  justify-content:flex-start;
+  gap: 20px;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* margin: 5;
-  padding: 5;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-top: 1.3em;
 }
 
-.work-item {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  width: 20%;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: transform 0.3s, box-shadow 0.3s;
+.project-card {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(45, 212, 191, .1);
+  transition: transform 0.2s ease;
+  font-family:  "Poppins", sans-serif";
 }
 
-.work-item:hover {
+.project-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.work-item img {
-  width: 40px;
-  height: 40px;
+.project-card h6 {
+  font-weight: bold;
+}
+
+.project-card p {
+  font-size: 0.9em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: var(--bs-font-cursive);
+} 
+
+.project-card a, .see-more {
+  text-decoration: none;
+  color: #e7db6c;
+  cursor: pointer;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Articles */
+/* .why-write {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  line-height: 1.6;
+} */
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-list li {
   margin-bottom: 10px;
 }
 
-.work-description {
-  text-align: center;
-}
-
-.work-description h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.work-description p {
-  margin: 0 0 10px 0;
-  font-size: 1em;
-  color: #555;
-}
-
-.work-description a {
-  color: #007BFF;
+.article-list li a {
   text-decoration: none;
+  color: var(--bs-text-secondary-color);
+  font-size: 0.8em;
+  font-weight: bold;
+  transition: color 0.2s ease;
 }
 
-.work-description a:hover {
-  text-decoration: underline;
+.article-list li a:hover {
+  color: #cbe4f4;
 }
-
-/* *------- end Works----* */
-
-
 
 /* *------------ Contact Me * */
 .card {
