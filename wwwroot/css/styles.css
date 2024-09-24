@@ -336,7 +336,7 @@ body {
 /* Resume section */
 
 .resume-position h4 {
-  line-height: 15px;
+  line-height: 16px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -522,9 +522,9 @@ body {
     margin-left: 0;
   }
 
-  .projects-grid {
+  /* .projects-grid {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
 }
 
@@ -534,9 +534,13 @@ body {
     margin-left: 0;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .project-card {
+    width: 100% !important;
   }
+
+  /* .projects-grid {
+    grid-template-columns: 1fr;
+  } */
   
 }
 
@@ -551,6 +555,9 @@ body {
     margin: 8px;
   } */
 
+  .project-card {
+    width: 100% !important;
+  }
   .custom-svg {
     width: 2.2em; 
   }
