@@ -15,7 +15,9 @@
 body {
   color: var(--bs-text-primary-color);
   background-color: var(--bs-primary-color);
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .ml-2 {
@@ -266,51 +268,6 @@ body {
 }
 
 /* Experience section */
-#experience {
-  margin-left: 7em;
-}
-
-.work-link {
-  text-decoration: none !important;
-  color: var(--bs-text-primary-color);
-  cursor: pointer;  
-  font-family: var(--bs-font-cursive);
-}
-
-.work-link:hover {
-  color: var(--bs-text-secondary-color); 
-  font-size: large;
-}
-
-.exp-heading {
-  display: flex;
-  align-items: baseline;
-  color: var(--bs-text-secondary-color); 
-  font-family: var(--bs-font-cursive);
-}
-
-.work-title {
-  margin-right: 2em;
-}
-
-.duration {
-  font-size: small;
-  font-style: oblique;
-  color: var(--bs-text-secondary-color);
-}
-
-.roleDesc {
-  color: var(--bs-secondary-color); 
-  font-size: 1em;
-  font-family: var(--bs-font-cursive);
-  line-height: 1.7rem;
-  word-wrap: break-word;
-}
-
-.exp {
-  display: flex;
-  align-items: flex-start;
-}
 
 .skills-list {
   display: flex;
@@ -344,24 +301,25 @@ body {
 }
 
 .resume-position small {
-  padding: 5px 10px;
+  padding: 5px 7px;
   display: inline-block;
   margin-bottom: 8px;
+  text-decoration: none;
   font-family: var(--bs-font-cursive);
 }
 
-.resume-position ul {
+/* .resume-position ul {
   padding-left: 20px;
 }
 
 .resume-position ul li {
   padding-bottom: 10px;
-}
+} */
 
-.resume-position {
-  margin-top: -2px;
+/* .resume-position {
+  margin-top: -1.5px;
   position: relative;
-}
+} */
 
 .resumeLink {
   margin-right: 2em;
@@ -407,7 +365,7 @@ body {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 20px;
-  width: auto;
+  /* width: auto; */
   box-shadow: 0 4px 6px rgba(45, 212, 191, .1);
   transition: transform 0.2s ease;
   font-family:  'Poppins', sans-serif";
@@ -521,6 +479,9 @@ body {
     margin-left: 0;
   }
 
+  .project-card {
+    width: 100% !important;
+  }
   /* .projects-grid {
     grid-template-columns: 1fr 1fr;
   } */
