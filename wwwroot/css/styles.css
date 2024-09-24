@@ -447,7 +447,7 @@ body {
   background-color: transparent;
   color:#fff;
   border: 1.5px solid #e7db6c;
-  border-radius: 14px;
+  border-radius: 4px;
   font-size: 12px;
   text-decoration: none;
   box-shadow: 0 0 8px rgba(231, 219, 108, 0.5);
@@ -514,6 +514,7 @@ body {
   margin: 0;
 }
 
+
 /* Media queries */
 @media (max-width: 1200px) {
  
@@ -533,14 +534,9 @@ body {
     margin-left: 0;
   }
 
-  .resumeLink, .resumeLink span{
-    font-family: 'Poppins', sans-serif;
-  }
-
   .projects-grid {
     grid-template-columns: 1fr;
   }
-
   
 }
 
@@ -554,10 +550,6 @@ body {
   /* .main-skill, .side-skill {
     margin: 8px;
   } */
-
-  .resumeLink, .resumeLink span{
-    font-family: 'Poppins', sans-serif;
-  }
 
   .custom-svg {
     width: 2.2em; 
