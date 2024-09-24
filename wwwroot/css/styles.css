@@ -20,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .ml-2 {
   margin-left: 1em;
 }
@@ -272,39 +273,44 @@ body {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .skills-list > li {
-  margin-right: 0.5rem;
+  display: inline-block;
+  /* margin-right: 0.5em;  */
 }
 
 .skills-badge {
-  display: flex;
-  padding: 0.25rem 0.75rem;
+  /* display: flex; */
+  padding: 0.25em 0.75em;
   border-radius: 9999px;
-  align-items: center;
+  /* align-items: center; */
   background-color: rgba(45, 212, 191, .1);
   color: rgb(231, 219, 108);
-  font-size: small;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.2rem;
+  font-size: 13px;
+  white-space: nowrap;
+  /*font-family: 'Poppins', sans-serif;
+  line-height: 1.2rem; */
 }
 
 /* Resume section */
 
 .resume-position h4 {
-  line-height: 16px;
+  line-height: 18px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
 }
 
 .resume-position small {
-  padding: 5px 7px;
+  margin-left: 10px;
   display: inline-block;
   margin-bottom: 8px;
   text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
   font-family: var(--bs-font-cursive);
 }
 
