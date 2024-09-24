@@ -516,6 +516,7 @@ body {
 
 /* Media queries */
 @media (max-width: 1200px) {
+ 
   .ml-3 {
     margin-left: 0;
   }
