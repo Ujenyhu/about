@@ -298,7 +298,7 @@ body {
 /* Resume section */
 
 .resume-position h4 {
-  line-height: 18px;
+  line-height: 20px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -307,10 +307,10 @@ body {
 .resume-position small {
   margin-left: 10px;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
   text-decoration: none;
-  flex-shrink: 0;
-  white-space: nowrap;
+  /* flex-shrink: 0;
+  white-space: nowrap; */
   font-family: var(--bs-font-cursive);
 }
 

@@ -23,13 +23,30 @@
 <style>
 
   body.resume-body { 
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
+    /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;  */
     margin: 2.5rem 2.5rem !important;
+    font-family: 'Poppins', sans-serif !important;
     background-color: white !important;
-    overflow: visible !important;
+    color: black;
+    /* overflow: visible !important; */
     /*text-align: justify;
     line-height: 1.5; */
   }
+
+  p {
+    text-align: justify !important;
+    line-height: 1.6  !important;
+  }
+
+  h3, .heading {
+    font-weight: bold;
+  }
+
+ .page-break {
+    page-break-before: always !important;
+    margin-top: 3em !important;
+  }
+
 
   @media print {
 
@@ -37,11 +54,12 @@
       margin-top: 2rem;
     }
     .page-break {
-        page-break-before: always;
+        page-break-before: always !important;
+        margin-top: 3em !important;
     }
 
-    h1, h2, h3, h4, h5, h6, ul, p {
-        page-break-after: avoid;
+    h1, h2, h3, h6, h5, h6, ul, p {
+        page-break-after: avoid !important;
     }
 
     body.resume-body {
@@ -59,19 +77,46 @@
     }
   }
 
+  @media (max-width: 767px) {
+      
+  body.resume-body {
+      margin: 8px;
+      font-size: 12px;
+    }
+
+    h5.name {
+      font-size: 218px;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
+
+    p, ul, li {
+      font-size: 10px;
+    }
+
+    /* Stack links on top of each other */
+    .contact-links a {
+      display: block;
+      margin-bottom: 8px;
+    }
+    }
+
+
 </style>
-<body class="resume-body" style=" background-color: white !important; color: black; page-break-after:avoid !important; page-break-inside: avoid !important; font-size: 12pt !important; margin: 2.5rem 2.5rem !important; font-family: system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; ">
+<body class="resume-body" style=" background-color: white !important; color: black; page-break-after:avoid !important; page-break-inside: avoid !important;">
   <div class="container">
 
-    <h2 class="name">𝐔𝐉𝐄𝐍𝐘𝐔𝐎𝐉𝐎 𝐏𝐑𝐄𝐂𝐈𝐎𝐔𝐒 𝐄𝐆𝐖𝐔𝐃𝐀</h2>
-    <h6 class="text-bold">Software Developer (.NET)</h6>
-    <p style="text-align: justify;">
+    <h5 class="name">𝐔𝐉𝐄𝐍𝐘𝐔𝐎𝐉𝐎 𝐏𝐑𝐄𝐂𝐈𝐎𝐔𝐒 𝐄𝐆𝐖𝐔𝐃𝐀</h5>
+    <h6 class="text-bold">Software Developer</6>
+    <p class="mb-2 mt-2">
       <a href="mailto:egwudaprecious.hotmail@gmail.com" target="_blank" rel="noreferrer noopener"
         style="text-decoration: none; color: black;"/><i class="bi bi-envelope-fill">
         egwudaprecious.hotmail@gmail.com</i>
       </a>
     </p>
-    <p class="">
+    <p class="mt-2">
       <a href="https://www.linkedin.com/in/eujenyu" target="_blank" rel="noreferrer noopener"
         style="text-decoration: none; color: blue;"><i>Linked Profile</i></a> -
       <a href="https://www.linkedin.com/in/eujenyu" target="_blank" rel="noreferrer noopener"
@@ -83,13 +128,13 @@
 
     </table>
 
-    <h4 class="mt-4">Proffesional Summary</h4>
-    <hr style="width: 100%;"  class="mb-3"/>
-    <p style="text-align: justify; line-height:2.3;">
+    <h6 class="mt-4 heading">Proffesional Summary</h6>
+    <hr />
+    <p>
       I am not just a determined software engineer- I am detail-oriented and innovative with over three years of experience in developing scalable, high-performance applications. 
       I specialize in C#, .NET, Node.js, blockchain development, and have a track record of delivering complex software solutions. My expertise includes 
       developing web applications, RESTful services, and blockchain-based systems for multiple network while adhering to efficient engineering practices and Object-oriented principles. 
-      With a solid background in database management and event-driven architecture using RabbitMQ, I excel in Agile environments and cross-functional team collaboration. 
+      <br></br>With a solid background in database management and event-driven architecture using RabbitMQ, I excel in Agile environments and cross-functional team collaboration. 
       I am committed to continuous learning and staying ahead of emerging technologies.
       <!-- I am not just a determined software engineer- I am relentless and innovative. In my three years of my
       development experience, I have demonstrated these qualities through the development and design of various projects and
@@ -103,28 +148,29 @@
       <br/> As a software engineer, I am committed to staying current on emerging technologies and enhancing my technical skills. Research is a hobby that  fuels both my personal and professional development. -->
     </p>
 
-    <h4 class="mt-4">Experience</h4>
-    <hr style="width: 100%;" class="mb-2" />
+    <h6 class="mt-4 heading">Experience</h6>
+    <hr />
     <p class="mt-4">
-      <h6 class="mb-0" style="font-weight: 500;">The Colmart </h6>
-      <p class="mb-2" style="font-weight: 500;">Blockchain Developer(Contract), <small><i>04-2024 - current</i></small></p> 
-      <p class="" style="font-weight: 500;">Responsibilties:</p>
+      <h5 class="mb-0">The Colmart </h5>
+      <p class="mb-2"><i>Blockchain Developer(Contract), 04-2024 - current</i></p>
+      <!-- <p class="mb-2" style="font-weight: 500;">Blockchain Developer(Contract), <small><i>04-2024 - current</i></small></p>  -->
+      <!-- <p class="text-bold">Responsibilties:</p> -->
     </p>
 
-    <ul style="line-height: 1.7;">
-      <li class="mb-3">
+    <ul>
+      <li class="mb-2">
         Developed a multi-chain blockchain platform enabling users to create wallets, receive and transfer tokens within and outside the system across Ethereum, Tron and Bitcoin networks.
       </li>
-      <li class="mb-3 mt-4" style="page-break-inside: avoid;">
+      <li class="mb-3">
         Implemented a token swap feature using Node.js, enabling seamless token exchanges between different blockchain ecosystems.
       </li>
       <li class="mb-3">
         Designed and deployed a robust event-driven architecture using RabbitMQ to handle high-frequency transaction events and wallet updates, improving system performance by at least 15%.
       </li>
-      <li class="mt-3">
+      <li class="mb-3">
         Built secure, scalable APIs in C# and .NET for user authentication, wallet management, and token transfers, integrated with MSSQL for efficient data management.
       </li>
-      <li class="mt-3">
+      <li class="mb-3" style="page-break-before:always !important;">
        Collaborated with cross-functional teams to ensure smooth system operation and support across multiple blockchain networks.
       </li>
     </ul>
@@ -132,16 +178,16 @@
 
    <!-- Second experience -->
     <p class="mt-4">
-      <h6 class="mb-0" style="font-weight: 500;">Cloudware Limited </h6>
-      <p class="mb-2" style="font-weight: 500;">Software Developer, <small><i>08-2021 - 03-2024</i></small></p> 
-      <p class="" style="font-weight: 500;">Responsibilties:</p>
+      <h5 class="mb-0">Cloudware Limited </h5>
+      <p class="mb-2"><i>Software Developer, 08-2021 - 03-2024</i></p>
+      <!-- <p class="text-bold">Responsibilties:</p> -->
     </p>
 
-    <ul style="line-height: 1.7;">
+    <ul>
       <li class="mb-3">
         Designed and deployed scalable web services for financial and identity verification ensuring seamless transactions, and increasing user satisfaction.
       </li>
-      <li class="mb-3 mt-4" style="page-break-inside: avoid;">
+      <li class="mb-3" style="page-break-inside: avoid;">
         Collaborated with financial services providers (Unified Payment, Hope PSB, Providus) to integrate secure API solutions, enabling seamless wallet operations.
       </li>
       <li class="mb-3">
@@ -156,13 +202,13 @@
     </ul>
 
     <!-- third experience -->
-    <p class="mt-3">
-      <h6 class="mb-0" style="font-weight: 500;">Affluent Group </h6>
-      <p class="mb-2" style="font-weight: 500;">Software Developer Intern, <small><i>4/2020 - 11/2020</i></small></p> 
-      <p class="" style="font-weight: 500;">Responsibilties:</p>
+    <p class="mt-5">
+      <h5 class="mb-0">Affluent Group </h5>
+      <p class="mb-2" ><i>Software Developer Intern, 4/2020 - 11/2020</i></p> 
+      <!-- <p class="text-bold">Responsibilties:</p> -->
     </p>
 
-    <ul style="line-height: 1.7;">
+    <ul>
       <li class="mb-2">
         Collaborated remotely with the development team to write, test, and debug software, contributing to key feature implementations and enhancements.
       </li>
@@ -177,10 +223,10 @@
       </li>
     </ul>
 
-    <h4 class="mt-4">Skills/Technologies</h4>
-    <hr style="width: 100%;" class="mb-2" />
+    <h6 class="mt-5 heading">Skills/Technologies</h6>
+    <hr />
 
-    <ul style="line-height: 1.5;">
+    <ul>
       <li class="mb-2">
         Programming Languages: <i style="font-weight: 600;">C#, JavaScript, Node.js</i>
       </li>
@@ -214,7 +260,7 @@
     </ul>
 
     <!-- <div class="page-break"> -->
-      <h4 class="mt-4">Education</h4>
+      <h6 class="mt-4 heading">Education</h6>
       <hr style="width: 100%;" class="mb-2" />
   
       <p>
