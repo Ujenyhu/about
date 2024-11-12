@@ -15,6 +15,7 @@
 body {
   color: var(--bs-text-primary-color);
   background-color: var(--bs-primary-color);
+  /* font-family: var(--bs-font-cursive) !important; */
   font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -306,7 +307,7 @@ body {
 
 .resume-position small {
   /* margin-left: 10px; */
-  margin-left: 1rem;
+  margin-left: 0.35rem;
   /* display: inline-block; */
   /* margin-bottom: 11px; */
   text-decoration: none;
@@ -500,7 +501,7 @@ body {
   }
 
   .project-card {
-    width: 100% !important;
+    max-width: 100% !important;
   }
 
   /* .projects-grid {
@@ -516,7 +517,7 @@ body {
   }
 
   .project-card {
-    width: 100% !important;
+    max-width: 100% !important;
   }
 
 
@@ -538,7 +539,7 @@ body {
   } */
 
   .project-card {
-    width: 100% !important;
+    max-width: 100% !important;
   }
   .custom-svg {
     width: 2.2em; 

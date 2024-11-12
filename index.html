@@ -330,57 +330,12 @@
 
   <iframe id="pdfFrame" style="display: none;"></iframe>
   <script src="wwwroot/lib/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="wwwroot/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
   integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
   <script>
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-    
-    function printResume() {
-      var printWindow = window.open('resume.html', '_blank');
-      printWindow.onload = function () {
-        printWindow.print();
-      };
-    }
-
-    function downloadPDF() {
-      
-      // Get the iframe element
-      //var iframe = document.getElementById('pdfFrame');
-      // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-
-
-     // Remove the iframe and add a new one to force a fresh load
-      var oldIframe = document.getElementById('pdfFrame');
-      if (oldIframe) oldIframe.remove();
-
-      var newIframe = document.createElement('iframe');
-      newIframe.id = 'pdfFrame';
-      newIframe.style.display = 'none'; // Hide the iframe
-      document.body.appendChild(newIframe);
-
-      // Set the iframe source to the resume page
-      newIframe.src = 'resume.html';
-      //iframe.src = 'resume.html';
-
-      // Wait for the iframe content to load completely
-      newIframe.onload = function () {
-       debugger;
-       
-        // Access the iframe's document
-        //var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-        var iframeDocument = newIframe.contentWindow.document;
-        
-        // Get the body element of the iframe
-        var htmlElement = iframeDocument.body;
-        
-        // Use html2pdf to convert the iframe content to a PDF and save it
-        html2pdf().from(htmlElement).save(`Resume- Ujenyuojo Precious Egwuda (Software Developer).pdf`);
-      };
-    }
-
 
     // function downloadPDF() {
     //   debugger;
