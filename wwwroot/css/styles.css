@@ -414,9 +414,10 @@ body {
   /* transition: background-color 0.2s ease; 
 } */
 
-/* .projects-img {
- 
-} */
+.projects-img {
+ width: 100%;
+ height: 50%;
+}
 
 .project-btn {
   /* margin-left: 16.4em;  */

@@ -24,7 +24,7 @@
 
   body.resume-body { 
     /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;  */
-    margin: 2.5rem 2.5rem !important;
+    margin: 3.3rem 3.3rem !important;
     /* font-family: 'Poppins', sans-serif !important; */
     background-color: white !important;
     color: black;
@@ -38,13 +38,12 @@
     line-height: 1.7 !important;
   }
 
-
- /* .page-break {
-    page-break-before: always !important;
-  } */
+  h1, h2, h3, h6, h5, h6, ul, p {
+      page-break-after: avoid !important;
+  }
 
   .name {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 
   @page {
@@ -59,9 +58,9 @@
       margin-top: 2rem;
     }
 
-    .page-break {
+    /* .page-break {
       page-break-before: always !important;
-    }
+    } */
 
     h1, h2, h3, h6, h5, h6, ul, p {
         page-break-after: avoid !important;
@@ -69,7 +68,7 @@
 
     body.resume-body {
       margin: 11px;
-      padding: 06px;
+      padding: 6px;
       width: 210mm; /* A4 width */
       height: 297mm; /* A4 height */
       font-size: 12pt;
@@ -110,7 +109,7 @@
       display: block;
       margin-bottom: 8px;
     }
-    }
+  }
 
 
 </style>
@@ -128,20 +127,20 @@
     <p class="mt-0">
       <a href="https://www.linkedin.com/in/eujenyu" target="_blank" rel="noreferrer noopener"
         style="text-decoration: none; color: blue;"><i>Linked Profile</i></a> -
-      <a href="https://www.linkedin.com/in/eujenyu" target="_blank" rel="noreferrer noopener"
+      <a href="https://github.com/Ujenyhu" target="_blank" rel="noreferrer noopener"
         style="text-decoration: none; color: blue;"><i>GitHub</i></a> -
       <a href="https://ujenyhu.github.io/about" target="_blank" rel="noreferrer noopener"
         style="text-decoration: none; color: blue;"><i>Portfolio Website</i></a>
     </p>
 
-    <h5 class="mt-4 text-bold" style="font-weight: 600;">Proffesional Summary</h5>
+    <h5 class="mt-5 text-bold" style="font-weight: 600;">Proffesional Summary</h5>
     <hr />
     <p>
-      I am not just a determined software engineer- I am detail-oriented and innovative with over three years of experience in developing scalable, high-performance applications. 
-      I specialize in C#, .NET, Node.js, blockchain development, and have a track record of delivering complex software solutions. My expertise includes 
+      I am not just a determined software developer- I am detail-oriented and innovative with over three years of experience in developing scalable, high-performance applications. 
+      I specialize in C#, .NET, Node.js, blockchain development, and have a track record of delivering complex software solutions. My experience includes 
       developing web applications, RESTful services, and blockchain-based systems for multiple network while adhering to efficient engineering practices and Object-oriented principles. 
-      <p class="">With a solid background in database management and event-driven architecture using RabbitMQ, I excel in Agile environments and cross-functional team collaboration. 
-        I am committed to continuous learning and staying ahead of emerging technologies.</p>
+      <p class="">With a solid background in database management and event-driven architecture using RabbitMQ, I do well in Agile environments and cross-functional team collaboration. 
+        I am also committed to continuous learning and staying in tune with emerging technologies.</p>
       <!-- I am not just a determined software engineer- I am relentless and innovative. In my three years of my
       development experience, I have demonstrated these qualities through the development and design of various projects and
       software solutions. I specialize in C#, .NET, JavaScript, Node.js, MVC, Web API, jQuery while adhering to efficient
@@ -168,15 +167,16 @@
         Developed a multi-chain blockchain platform enabling users to create wallets, receive and transfer tokens within and outside the system across Ethereum, Tron and Bitcoin networks.
       </li>
       <li class="mb-3">
-        Implemented a token swap feature using Node.js, enabling seamless token exchanges between different blockchain ecosystems.
+        Implemented an onchain token swap feature, enabling seamless token exchanges on ethereum and tron blockchain ecosystems.
       </li>
       <li class="mb-3">
-        Designed and deployed a robust event-driven architecture using RabbitMQ to handle high-frequency transaction events and wallet updates, improving system performance by at least 15%.
+        Designed and deployed a robust event-driven service using MassTransit to handle high-frequency transaction events and wallet updates, improving system performance by at least 15%.
       </li>
       <li class="mb-3">
         Built secure, scalable APIs in C# and .NET for user authentication, wallet management, and token transfers, integrated with MSSQL for efficient data management.
       </li>
-      <li class="mb-3" style="page-break-before:always !important;">
+      <!-- <li class="mb-3" style="page-break-before:always !important;"> -->
+      <li class="mb-3">
        Collaborated with cross-functional teams to ensure smooth system operation and support across multiple blockchain networks.
       </li>
     </ul>
@@ -234,20 +234,20 @@
 
     <ul style="line-height: 1.6;">
       <li class="mb-2">
-        Programming Languages: <i style="font-weight: 600;">C#, JavaScript, Node.js</i>
+        Programming Languages: <i style="font-weight: 600;">C#, JavaScript, </i>
       </li>
       <li class="mb-2">
-        Web Development: <i style="font-weight: 600;">MVC, .NET, RESTful Services, jQuery, HTML, CSS</i>
+        Frameworks & Web Development: <i style="font-weight: 600;">.NET, Node.js, MVC, RESTful API, jQuery, HTML, CSS</i>
       </li>
       <li class="mb-2">
-        Blockchain Development: <i style="font-weight: 600;">Ethereum, Tron, Bitcoin</i>
+        Blockchain Development: <i style="font-weight: 600;">Ethereum, Tron, Bitcoin, Solana</i>
       </li>
       <li class="mb-2">
-        Database: <i style="font-weight: 600;">MSSQL</i>
+        Database Management: <i style="font-weight: 600;">SQL Server</i>
       </li>
-      <li class="mb-2">
-        Event-Driven Architecture: <i style="font-weight: 600;">RabbitMQ, MassTransit</i>
-      </li>
+      <!-- <li class="mb-2">
+        Event-Driven Ser: <i style="font-weight: 600;">RabbitMQ, MassTransit</i>
+      </li> -->
       <!-- <li class="mb-2">
         Server: <i style="font-weight: 600;">Linux, CI/CD, Docker</i>
       </li> -->
@@ -260,9 +260,9 @@
       <li class="mb-2">
         Fast Learning and Adaptive skills
       </li>
-      <li class="mb-2">
+      <!-- <li class="mb-2">
         Excellent verbal and written communication skills (English)
-      </li>
+      </li> -->
     </ul>
 
     <!-- <div class="page-break"> -->
