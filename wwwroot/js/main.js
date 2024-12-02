@@ -19,13 +19,10 @@ function downloadPDF() {
   // iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
 
 debugger;
- // Remove the iframe and add a new one to force a fresh load
+
+   // Remove the iframe and add a new one to force a fresh load
   // var oldIframe = document.getElementById('pdfFrame');
   // if (oldIframe) oldIframe.remove();
-  // var newIframe = document.createElement('iframe');
-  // newIframe.id = 'pdfFrame';
-  // newIframe.style.display = 'none'; // Hide the iframe
-  // document.body.appendChild(newIframe);
 
   const iframe = document.getElementById('pdfFrame') || document.createElement('iframe');
   iframe.id = 'pdfFrame';

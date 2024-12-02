@@ -5,6 +5,7 @@
     --bs-text-secondary-color: #75aceb;
     --bs-secondary-color: #e9ecef; 
     --bs-font-cursive: cursive;
+    --bs-font: 'Poppins', sans-serif, Times, bootstrap-icons, "Times New Roman", "Lucida Console" ;
     --bs-slide-animation: 1s alternate slidetext;
     --bs-display-inline: inline-block;
     --bs-card-bg-color: none;
@@ -16,9 +17,10 @@ body {
   color: var(--bs-text-primary-color);
   background-color: var(--bs-primary-color);
   /* font-family: var(--bs-font-cursive) !important; */
-  font-family: 'Poppins', sans-serif !important;
+  font-family:  var(--bs-font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: normal;
 }
 
 
@@ -33,25 +35,25 @@ body {
 /* Logo and brand */
 .text-brand {
   color: #75aceb;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--bs-font);
   font-weight: 400;
   font-optical-sizing: auto;
 }
 
 .text-brand-sec {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--bs-font);
   font-weight: 300;
   font-optical-sizing: auto;
 }
 
 .name{
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sub {
   color: var(--bs-text-secondary-color);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-family: var(--bs-font);
+  font-weight: 400;
 }
 
 
@@ -80,15 +82,15 @@ body {
 
 /* Body content */
 .body-content {
-  margin-inline-start: 6rem;
-  margin-inline-end: 6rem;
+  margin-inline-start: 4rem;
+  margin-inline-end: 4rem;
   margin-top: 4rem !important;
 
 }
 
 #welcome-msg {
-  font-size: 1em;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-family: var(--bs-font);
   white-space: nowrap;
   overflow: hidden;
   border-right: .12em solid #e7db6c; 
@@ -112,7 +114,7 @@ body {
 /* Intro section */
 .intro-name-small {
   color: var(--bs-text-secondary-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--bs-font);
   font-weight: 500;
   font-optical-sizing: auto;
 }
@@ -216,7 +218,8 @@ body {
   justify-content: center;
   background: color-mix(in srgb, #ffff, transparent 90%);
   color: #ffffff !important;
-  margin: 1.5rem 2px;
+  /* margin: 1.5rem 2px; */
+  margin: 1.5rem 0.1rem;
   border-radius: 50%;
   /* text-align: center; */
   width: 40px;
@@ -247,11 +250,15 @@ body {
 /* About section */
 .about-p {
   color: var(--bs-text-primary-color);
-  font-size: 0.9em;
-  font-family: "Poppins", sans-serif;
-  text-align: justify;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  font-family: var(--bs-font);
+  text-align: left;
+  line-height: 1.9;
   margin-bottom: 20px;
+  white-space: normal;      
+  hyphens: auto;              
+  overflow-wrap: break-word;  
+  word-break: break-word; 
 }
 
 .section-heading {
@@ -269,13 +276,13 @@ body {
   background-color: var(--bs-text-secondary-color);
 }
 
-/* Experience section */
+/* Skills badge */
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: flex-start; 
+  gap: 0.5rem;
 }
 
 .skills-list > li {
@@ -284,16 +291,11 @@ body {
 }
 
 .skills-badge {
-  /* display: flex; */
   padding: 0.25em 0.75em;
   border-radius: 9999px;
-  /* align-items: center; */
   background-color: rgba(45, 212, 191, .1);
   color: rgb(231, 219, 108);
   font-size: 13px;
-  white-space: nowrap;
-  /*font-family: 'Poppins', sans-serif;
-  line-height: 1.2rem; */
 }
 
 /* Resume section */
@@ -306,28 +308,12 @@ body {
 }
 
 .resume-position small {
-  /* margin-left: 10px; */
   margin-left: 0.35rem;
-  /* display: inline-block; */
-  /* margin-bottom: 11px; */
   text-decoration: none;
-  /* flex-shrink: 0; */
-  /* white-space: nowrap; */
-  font-family: var(--bs-font-cursive);
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
-/* .resume-position ul {
-  padding-left: 20px;
-}
 
-.resume-position ul li {
-  padding-bottom: 10px;
-} */
-
-/* .resume-position {
-  margin-top: -1.5px;
-  position: relative;
-} */
 
 .resumeLink {
   margin-right: 2em;
@@ -352,14 +338,10 @@ body {
   opacity: 1; 
   font-size: small;
   font-family: var(--bs-font-cursive);
-  line-height: 1.2rem;
+  line-height: 1.2em;
 }
 
 /* Projects section */
-/* #projects {
-  text-align: justify;
-  padding: 20px;
-} */
 
 .projects-grid {
   display: flex;
@@ -380,7 +362,7 @@ body {
   flex: 1 1 20em;
   box-shadow: 0 4px 6px rgba(45, 212, 191, .1);
   transition: transform 0.2s ease;
-  font-family:  'Poppins', sans-serif";
+  font-family:  var(--bs-font);
 
 }
 
@@ -396,9 +378,13 @@ body {
   font-size: 0.9em;
   margin-top: 1em;
   margin-bottom: 2em;
-  font-family: var(--bs-font-cursive);
-  /* line-height: 1.2rem; */
-  text-align: justify;
+  font-family: var(--bs-font);
+  text-align: left;
+  line-height: 1.6;
+  white-space: normal;      
+  hyphens:auto;              
+  overflow-wrap: break-word;  
+  word-break: break-word; 
 } 
 
 /* .project-card a {
@@ -443,18 +429,11 @@ body {
   color: #e7db6c;
   cursor: pointer;
   font-size: small;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--bs-font);
 }
 
 
 /* Articles */
-/* .why-write {
-  font-family: 'Poppins', sans-serif;
-  text-align: justify;
-  margin-bottom: 20px;
-  font-size: 0.9em;
-  line-height: 1.6;
-} */
 
 .article-list {
   list-style-type: none;
@@ -486,7 +465,7 @@ body {
   margin-top: 4em;
   text-align: center;
   font-size: small;
-  font-family: var(--bs-font-cursive);
+  font-family: var(--bs-font-cursive) !important;
 }
 
 .footer p {
