@@ -1,16 +1,16 @@
 {
-  "name": "Egwuda Ujenyuojo Portfolio",
+  "name": "Egwuda Ujenyuojo's Portfolio Website",
   "short_name": "Ujenyuojo's Portfolio Website",
   "description": "A portfolio website showcasing the skills and projects of Egwuda Ujenyuojo Precious.",
   "start_url": "/index.html",
   "icons": [
     {
-      "src": "/favicon-32x32.png",
+      "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
